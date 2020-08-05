@@ -1,0 +1,14 @@
+/* Program to write the Fibonacci series*/
+var fs = function (m){
+    if(m===1)
+    {
+        return[0, 1];
+    }else
+{
+        var y = fs(m-1);
+        y.push(y[y.length-1] + y[y.length - 2]);
+        return y;
+    }
+};
+
+console.log(fs(12));
